@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Michroma&display=swap);
+
+
+body {
+    background: linear-gradient(90deg, #f8877b 0%, #413e3e 100%);
+    font-family: Michroma, serif;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.navbar-nav .nav-link.active {
+    color: aliceblue;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar-toggler {
+    background-color: rgb(153, 156, 158);
+}
+
+.card-body .btn.btn-primary {
+    background-color: rgb(137, 117, 117);
+    border: none;
+}
+
+.sidebar {
+    color: aliceblue;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.slide-text,
+.footer-text {
+    margin: auto auto;
+}
+
+footer {
+    border-top: solid;
+    border-style: double;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: myAnim 2s ease-out 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
